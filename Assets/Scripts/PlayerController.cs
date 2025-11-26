@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
     {
         // Movimiento
         float movimiento = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(movimiento * velocidad, rb.velocity.y);
+        rb.linearVelocity = new Vector2(movimiento * velocidad, rb.linearVelocity.y);
 
         anim.SetFloat("Velocidad", Mathf.Abs(movimiento));
         anim.SetBool("EnSuelo", enSuelo);

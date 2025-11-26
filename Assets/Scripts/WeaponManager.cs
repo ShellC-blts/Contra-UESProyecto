@@ -2,15 +2,23 @@ using UnityEngine;
 
 public class WeaponManager : MonoBehaviour
 {
-    public GameObject armaActual;
+    public GameObject armaLaser;
+    public GameObject armaFuego;
+    private int armaActual = 0;
 
-    public void CambiarArma(GameObject nuevaArma)
+    void Update()
     {
-        armaActual = nuevaArma;
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            armaActual = 1 - armaActual;
+        }
     }
-
-    public GameObject ObtenerArmaActual()
+        public GameObject ObtenerArmaActual()
     {
-        return armaActual;
+        return armaActual == 0 ? armaLaser : armaFuego;
+    }
+        public string ObtenerNombreArma()
+    {
+        return armaActual == 0 ? "LASER" : "FIRE";
     }
 }
