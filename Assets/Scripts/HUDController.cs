@@ -1,0 +1,1 @@
+Control simple de HUD
