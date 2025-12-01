@@ -9,7 +9,7 @@ public class Bullet : MonoBehaviour
 
     void Update()
     {
-        transform.position += -transform.right * Time.deltaTime * Speed;
+        transform.position += transform.right * Time.deltaTime * speed;
     }
 
     void OnTriggerEnter2D(Collider2D col)
