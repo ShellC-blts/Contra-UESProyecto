@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7aab45afebaec2d408abae24d9f160db
+guid: fa08422d99775bb4f81f6c95bd32b6f7
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -103,10 +103,10 @@ TextureImporter:
       name: WhatsApp Image 2025-11-25 at 4.34.31 PM 02_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 1536
+        x: 26
+        y: 242
+        width: 972
+        height: 1070
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WhatsApp Image 2025-11-25 at 4.34.31 PM 02_0: 6457769787769648497
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
