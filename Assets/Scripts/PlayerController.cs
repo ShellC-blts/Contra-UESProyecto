@@ -42,13 +42,13 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("EnSuelo", enSuelo);
 
         // Salto
-        if (Input.GetButtonDown("Jump") && enSuelo)
+        if (Input.GetKeyDown(KeyCode.Space) && enSuelo)
         {
             rb.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
         }
 
         // Disparo
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.X))
         {
             GameObject proyectil =
                 wm.ObtenerArmaActual() == proyectilLaser
